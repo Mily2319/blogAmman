@@ -1,0 +1,139 @@
+/* Reset e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #d4af37;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Cabeçalho */
+header {
+  background: #000;
+  color: #d4af37;
+  padding: 20px 0;
+  border-bottom: 2px solid #d4af37;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #000, #333);
+  color: #d4af37;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 2px solid #d4af37;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Bio */
+.bio {
+  margin: 40px 0;
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.bio h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Posts */
+.posts {
+  margin-top: 40px;
+}
+
+.post {
+  background: #111;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-left: 5px solid #d4af37;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.post a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.post a:hover {
+  color: #fff;
+}
+
+/* Rodapé */
+footer {
+  background: #000;
+  color: #d4af37;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 2px solid #d4af37;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin: 10px 0;
+  }
+}

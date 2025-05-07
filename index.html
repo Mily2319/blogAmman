@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amman Digital - Empreenda no Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Animação fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container fade-in">
+      <h1>Amman Digital</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#artigos">Artigos</a></li>
+          <li><a href="#sobre">Sobre Amman</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Destaque -->
+  <section class="hero fade-in">
+    <div class="container">
+      <h2>Desbloqueie Seu Potencial Digital</h2>
+      <p>Amman é gestora de tráfego pago, influenciadora e analista de marketing, ajudando você a crescer no mundo digital.</p>
+    </div>
+  </section>
+
+  <!-- Bio Amman -->
+  <section id="sobre" class="bio container fade-in">
+    <h3>Sobre Amman</h3>
+    <p>Com anos de experiência em marketing digital e gestão de tráfego pago, Amman oferece estratégias certeiras para potencializar sua presença online e atrair resultados reais. Aqui você encontra dicas práticas, estudos de caso e insights exclusivos para empreender no digital com sucesso.</p>
+  </section>
+
+  <!-- Posts -->
+  <main id="artigos" class="container posts fade-in">
+    <article class="post">
+      <h3>5 Estratégias de Tráfego Pago para 2025</h3>
+      <p>Descubra as táticas mais eficazes para maximizar seu ROI com anúncios online e atrair clientes qualificados.</p>
+      <a href="ETP.html">Leia mais</a>
+    </article>
+
+    <article class="post">
+      <h3>Como Criar Conteúdo que Converte</h3>
+      <p>Aprenda a produzir conteúdo relevante e persuasivo que gera engajamento e vendas para o seu negócio digital.</p>
+      <a href="CCCC.html">Leia mais</a>
+    </article>
+
+    <article class="post">
+      <h3>As Tendências do Marketing Digital</h3>
+      <p>Veja o que está por vir no universo do marketing digital e como preparar sua marca para se destacar.</p>
+      <a href="TMD.html">Leia mais</a>
+    </article>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="fade-in">
+    <div class="container">
+      <p>&copy; 2025 Amman Digital. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Ativa o fade-in de forma progressiva
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.fade-in').forEach((el, index) => {
+        el.style.animationDelay = `${index * 0.2}s`;
+      });
+    });
+  </script>
+
+</body>
+</html>
+ 
